@@ -124,6 +124,7 @@ body {
   display: flex;
   max-width: 1280px;
   padding: 25px;
+  flex-direction: row;
 }
 
 .logo {
@@ -135,5 +136,24 @@ body {
 .logo img {
   max-width: 100%;
   max-height: 100%;
+}
+
+@media (max-width: 900px) {
+  .products {
+    flex-direction: column;
+  }
+
+  .product-image-wrap img {
+    height: auto;
+    width: 50%;
+  }
+
+  .bg-text {
+    font-size: 13rem !important;
+  }
+
+  .product-detail {
+    font-size: 1rem;
+  }
 }
 </style>
